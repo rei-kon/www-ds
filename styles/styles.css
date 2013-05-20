@@ -1,0 +1,500 @@
+/*
+	DEFAULT STYLES
+*/
+
+html, body {
+	height: 100%;
+	padding:0;
+	margin:0;
+	background: #fbfbfb;
+	color: #616161;
+	min-height: 760px;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 { line-height:1.4em; color:#000000; font-weight: 300;}
+
+ul {margin: 0.5em 0 1.2em 25px; padding:0; }
+ul li {margin-bottom:5px; }
+ul ul, ul ol, ol ul, ol ol {margin-bottom:0; margin-top:2px; margin-bottom:5px;}
+ul li li, ol li li {}
+ol ul, ul ul {}
+ol {margin: 0em 0 1.2em 25px; padding:0}
+ol li {margin-bottom:4px; }
+
+ul.simple { padding:0; margin:0; list-style:none;}
+ul.simple LI {margin-bottom:7px;}
+
+.clear {clear:both; font-size:1px; height:0px; line-height:0px; float:none !important; width:0px; }
+
+.clearChlds {  *zoom: 1; }
+  .clearChlds:before,
+  .clearChlds:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .clearChlds:after {
+    clear: both;
+  }
+
+.bold {font-weight:bold;}
+.italic {font-style:italic;}
+
+.no_mrg_top {margin-top:0 !important;}
+.no_mrg_right {margin-right:0 !important;}
+.no_mrg_bottom {margin-bottom:0 !important;}
+.no_mrg_left {margin-left:0 !important;}
+
+.no_pad_top {padding-top:0 !important;}
+.no_pad_bottom { padding-bottom:0 !important;}
+
+.fl_left {float:left;}
+.fl_right {float:right;}
+
+.rel { position:relative;}
+.nobr { white-space:nowrap;}
+
+.hidden { display:none}
+.invisible { visibility:hidden; }
+
+a.dashed { text-decoration:none !important; border-bottom:1px dashed}
+a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { outline: none }
+
+.red { color: #e92300 }
+.gray { color: #666666}
+.orange { color: #ff7d00;}
+
+.ta-right { text-align: right;}
+
+/*
+	FONTS
+
+	More about google font Open Sans:
+	http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:300,300italic,600,600italic,400,400italic
+*/
+/*.fontLight { font-weight: 300; }
+.fontNormal {	font-weight: 400; }
+.fontSemibold {	font-weight: 600; }
+.fontBold { font-weight: 700; }
+.fontXBold { font-weight: 800; }*/
+
+
+/* 
+	Sticky Footer
+*/
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -45px;
+}
+.footer, .push {
+	height: 45px;
+}
+
+
+
+.contentWidth {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 60px;
+	min-width: 830px; /* 950 - paddings */
+	max-width: 1560px; /* 1680 - paddings */
+}
+
+.header { 
+	position: relative;
+	height: 200px;
+	}
+	.header .icon-set {
+		position: absolute;
+		top:5px;
+		right: 60px;
+		}
+		.header .icon-set a {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: -2px;
+			margin-left: 18px;
+		}
+	.logo {
+		position: absolute;
+		left: 22px;
+		top: 11px;
+		display: inline-block;
+		width: 208px;
+		height: 143px;
+		background: transparent url("../images/sprite.png") no-repeat 0 -40px;
+		}
+		.logo a {
+			display: inline-block;
+			width: 208px;
+			height: 143px;
+			background: url("../images/pixel.gif");
+		}
+	.menu {
+		padding: 103px 0 0 0;
+		float: right;
+		}
+		.menu ul {
+			padding: 0;
+			margin: 0; 
+			list-style: none;
+			display: inline-block;
+			
+		}
+		.menu ul li {
+			margin: 0;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.menu ul li a {
+			color: #616161;
+			text-decoration: none;
+			display: inline-block;
+			vertical-align: top;
+			-webkit-transition: color 0.2s linear;
+			transition: color 0.2s linear;
+		}
+		.menu ul li a:hover,
+		.menu ul li.active a {
+			color: #00ccd1;
+			-webkit-transition: color 0.2s linear;
+			transition: color 0.2s linear;
+		}
+
+		.menu .main {
+			
+		}
+		.menu .main ul {
+			border-bottom: 1px solid #00ccd1;
+			font-size: 16px;
+			text-transform: uppercase;
+			height: 48px;
+		}
+		.menu .main ul a {
+			padding: 0 55px 0 15px;
+		}
+		.menu .main ul .last a {
+			padding-right: 0;
+			
+		}
+		.menu .main ul li a {
+			height: 18px;
+			line-height: 18px;
+			border-left: 1px solid #d6d6d6;
+			outline: none;
+		}
+		.menu .main ul li.active a {
+			padding-bottom: 30px;
+			border-color: #00ccd1;
+		}
+
+		.menu .sub {
+			text-align: left;
+			padding-top: 10px;
+		}
+		.menu .sub ul {
+			font-size: 13px;
+			line-height: 16px;
+		}
+		.menu .sub ul a {
+			margin-left: 40px;
+			outline: none;
+		}
+		.menu .sub ul li:first-child a {
+			margin-left: 0;
+		}
+
+	.wall-outer {
+		height: 525px;
+		overflow: hidden;
+	}
+	#index .wall-fix {
+		margin-right: -10px;
+	}
+
+	.wall { 
+		position: relative;
+		width: 7728px; /* = суммарная ширина всех блоков #section-i */
+		}
+		.wall-section {
+			float: left;
+		}		
+
+		#index #section-1 { width: 2856px; /*background: #f00; */ }
+		#index #section-2 { width: 1008px; /*background: #ff0; */ }
+		#index #section-3 { width: 1176px; /*background: #f0f; */ }
+		#index #section-4 { width:  840px; /*background: #0ff; */ }
+		#index #section-5 { width: 1848px; /*background: #0f0; */ }
+
+		.wall .brick { 
+			float: left;		
+		}
+		#index .brick {
+			margin: 0 10px 10px 0;
+		}
+		.wall .brick-1x1 {
+			display: block;
+			width: 158px;
+			height: 158px;
+		}
+		.wall .brick-2x1 {
+			display: block;
+			width: 326px;
+			height: 158px;
+		}
+		.wall .brick-2x2 {
+			display: block;
+			width: 326px;
+			height: 326px;
+		}
+	.vCentered { 
+		position: absolute;
+		left: 0;
+		top:50%;
+		width: 100%;
+		margin-top: -190px;
+	}
+	#index .vCentered { margin-top: -210px;}
+
+	.wall .images { 
+		width: 346px; 
+		float: left; 
+	}
+
+	#inner .wall .images > div {
+		float: left;
+		position: relative;
+		margin: 0 10px 10px 0;
+	}
+
+	#inner .wall .text {
+		margin-left: 375px;
+		padding-right: 30px;
+		}
+		#inner .wall .text h1 {
+			font-size: 48px;
+			line-height: 1.2em;
+			margin: -10px 0 10px 0;
+		}
+		#inner .wall .text h2 {
+			font-size: 20px;
+			line-height: 1.2em;
+			margin: 0 0 30px 0;
+		}
+		#inner .wall .text p {
+			font-size: 14px;
+			line-height: 30px;
+			margin-bottom: 30px;
+		}
+	#inner .wall .text.noimages {
+		margin-left: 0 !important;
+	}
+	.imgRight { 
+		float: right; 
+		margin: 0 0 10px 20px;
+	}
+	.imgLeft { 
+		float: left;
+		margin: 0 20px 10px 0;
+	}
+	.imgSimple {
+		margin-bottom: 5px;
+	}
+	.team { position: relative;}
+		.team .one { width: 16%; float: left; margin-left: 5%; }
+		.team .one:first-child {margin-left: 0;}
+		.team .one .imgSimple { width: 100% }
+		.team .one .name { font-weight: bold; margin-bottom: 5px;}
+		.team .one .small { font-size: 13px; margin-bottom: 8px; }
+
+/* NEW STYLES */		
+	#inner .wall .images.images-wide {
+		width: 682px;
+	}
+	#inner .wall .text.images-wide {
+		margin-left: 711px !important;
+	}
+	.wall .brick-4x2 {
+	    display: block;
+	    width: 662px;
+	    height: 326px;
+	}
+	.wall .brick-4x3 {
+	    display: block;
+	    width: 662px;
+	    height: 494px;
+	}
+/* // */
+
+
+.footer {}
+	.social { float: left; }
+		.social .links {
+			display: inline-block; 
+			padding: 5px 0;
+			height: 20px;
+			vertical-align: top;
+		}
+		.social .links a { 
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 16px;
+		}
+	.copyright { float: right;}
+		.copyright .ds-link {
+			display: inline-block;
+			margin-left: 16px;
+		}
+		.icon.logo-sm,
+		.icon.logo-sm i {
+			display: inline-block;
+			width: 25px;
+			height: 29px;
+			position: relative;
+			background: transparent url("../images/sprite.png") no-repeat -160px 0;
+		}
+		.icon.logo-sm i {
+			background: transparent url("../images/sprite.png") no-repeat -185px 0;
+		}
+
+	.footer .line { 
+		font-size: 12px;
+		line-height: 30px;
+		padding: 0 20px;
+		display: inline-block;	
+		border: 1px solid #e9e9e9;
+		vertical-align: top;
+		}
+		.line.line-left { border-width: 0 0 0 1px; }
+		.line.line-right { border-width: 0 1px 0 0; }
+
+
+	
+
+.icon, .icon i  { 
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	background: transparent url("../images/sprite.png") no-repeat -500px -500px;
+}
+
+.icon.tw   {background-position:   0px   0px;}
+.icon.tw i {background-position:   0px -20px;}
+.icon.fb   {background-position: -20px   0px;}
+.icon.fb i {background-position: -20px -20px;}
+.icon.vm   {background-position: -40px   0px;}
+.icon.vm i {background-position: -40px -20px;}
+.icon.yt   {background-position: -60px   0px;}
+.icon.yt i {background-position: -60px -20px;}
+
+.icon.pref   {background-position:  -80px   0px;}
+.icon.pref i {background-position:  -80px -20px;}
+.icon.mail   {background-position: -100px   0px;}
+.icon.mail i {background-position: -100px -20px;}
+.icon.comm   {background-position: -120px   0px;}
+.icon.comm i {background-position: -120px -20px;}
+.icon.link   {background-position: -140px   0px;}
+.icon.link i {background-position: -140px -20px;}
+
+@media screen and (max-width: 1100px) {
+	.menu .main ul a {
+    	padding-right: 25px;
+  	}
+  	.menu .sub ul a {
+  		margin-left: 20px;
+  	}
+
+  	#inner .wall .text {
+		margin-left: 350px;
+		}
+		#inner .wall .text h1 {
+			font-size: 40px;
+			line-height: 1.2em;
+			margin-bottom: 10px;
+		}
+		#inner .wall .text h2 {
+			font-size: 18px;
+			line-height: 1.2em;
+			margin-bottom: 25px;
+		}
+		#inner .wall .text p {
+			font-size: 14px;
+			line-height: 22px;
+			margin-bottom: 22px;
+		}
+
+
+/* NEW STYLES */
+	#inner .wall .text.images-wide {
+		margin-left: 686px !important;
+	}
+/**/
+
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1350px) {
+  	#inner .wall .text {
+		margin-left: 363px;
+		}
+		#inner .wall .text h1 {
+			font-size: 44px;
+			line-height: 1.2em;
+			margin-bottom: 10px;
+		}
+		#inner .wall .text h2 {
+			font-size: 20px;
+			line-height: 1.2em;
+			margin-bottom: 28px;
+		}
+		#inner .wall .text p {
+			font-size: 15px;
+			line-height: 25px;
+			margin-bottom: 25px;
+		}
+	.team .one .imgSimple { margin-bottom: 10px; }
+	.team .one .small { margin-bottom: 12px; }
+
+/* NEW STYLES */
+	#inner .wall .text.images-wide {
+		margin-left: 699px !important;
+	}
+/**/
+
+}
+
+
+@media screen and (min-width: 1350px) {
+  	#inner .wall .text {
+		margin-left: 375px;
+		}
+		#inner .wall .text h1 {
+			font-size: 48px;
+			line-height: 1.2em;
+			margin-bottom: 10px;
+		}
+		#inner .wall .text h2 {
+			font-size: 20px;
+			line-height: 1.2em;
+			margin-bottom: 30px;
+		}
+		#inner .wall .text p {
+			font-size: 16px;
+			line-height: 30px;
+			margin-bottom: 30px;
+		}
+	.team .one .imgSimple { margin-bottom: 15px; }
+	.team .one .small { margin-bottom: 15px; }
+
+/* NEW STYLES */
+	#inner .wall .text.images-wide {
+		margin-left: 711px !important;
+	}
+/**/
+
+}
