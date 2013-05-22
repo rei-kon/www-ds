@@ -312,11 +312,19 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 		.team .one .small { font-size: 13px; margin-bottom: 8px; }
 
 /* NEW STYLES */		
-	#inner .wall .images.images-wide {
+	#inner .wall .images.images-wide,
+	#inner .wall .images.images-4x {
 		width: 682px;
 	}
-	#inner .wall .text.images-wide {
+	#inner .wall .text.images-wide,
+	#inner .wall .text.images-4x {
 		margin-left: 711px !important;
+	}
+	#inner .wall .images.images-3x {
+		width: 514px;
+	}
+	#inner .wall .text.images-3x {
+		margin-left: 543px !important;
 	}
 	.wall .brick-4x2 {
 	    display: block;
@@ -326,6 +334,11 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 	.wall .brick-4x3 {
 	    display: block;
 	    width: 662px;
+	    height: 494px;
+	}
+	.wall .brick-3x3 {
+	    display: block;
+	    width: 504px;
 	    height: 494px;
 	}
 /* // */
@@ -431,8 +444,12 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 
 
 /* NEW STYLES */
-	#inner .wall .text.images-wide {
+	#inner .wall .text.images-wide,
+	#inner .wall .text.images-4x {
 		margin-left: 686px !important;
+	}
+	#inner .wall .text.images-3x {
+		margin-left: 518px !important;
 	}
 /**/
 
@@ -461,8 +478,12 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 	.team .one .small { margin-bottom: 12px; }
 
 /* NEW STYLES */
-	#inner .wall .text.images-wide {
+	#inner .wall .text.images-wide,
+	#inner .wall .text.images-4x {
 		margin-left: 699px !important;
+	}
+	#inner .wall .text.images-3x {
+		margin-left: 531px !important;
 	}
 /**/
 
@@ -492,8 +513,12 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 	.team .one .small { margin-bottom: 15px; }
 
 /* NEW STYLES */
-	#inner .wall .text.images-wide {
+	#inner .wall .text.images-wide,
+	#inner .wall .text.images-4x {
 		margin-left: 711px !important;
+	}
+	#inner .wall .text.images-3x {
+		margin-left: 543px !important;
 	}
 /**/
 
