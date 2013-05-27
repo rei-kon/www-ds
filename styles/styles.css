@@ -321,10 +321,16 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 		margin-left: 711px !important;
 	}
 	#inner .wall .images.images-3x {
-		width: 514px;
+		width: 514px; /* n*158 + (n-1)*10 + 20 */
 	}
 	#inner .wall .text.images-3x {
-		margin-left: 543px !important;
+		margin-left: 543px !important; /* imgs + 29 = 168*n + 39 */
+	}
+	#inner .wall .images.images-6x {
+		width: 1018px;
+	}
+	#inner .wall .text.images-6x {
+		margin-left: 1047px !important;
 	}
 	.wall .brick-4x2 {
 	    display: block;
@@ -451,6 +457,9 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 	#inner .wall .text.images-3x {
 		margin-left: 518px !important;
 	}
+	#inner .wall .text.images-6x {
+		margin-left: 1022px !important; /* 168*n + 14 */
+	}
 /**/
 
 }
@@ -484,6 +493,9 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 	}
 	#inner .wall .text.images-3x {
 		margin-left: 531px !important;
+	}
+	#inner .wall .text.images-6x {
+		margin-left: 1035px !important; /* 168*n + 27 */
 	}
 /**/
 
@@ -519,6 +531,9 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 	}
 	#inner .wall .text.images-3x {
 		margin-left: 543px !important;
+	}
+	#inner .wall .text.images-6x {
+		margin-left: 1047px !important; /* 168*n + 39 */
 	}
 /**/
 
