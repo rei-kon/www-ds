@@ -347,6 +347,26 @@ a.noOutline:active, a.noOutline:link, a.noOutline:focus, a.noOutline:hover { out
 	    width: 504px;
 	    height: 494px;
 	}
+
+.brick-text {}
+	.brick-text a { 
+		color: #000; 
+		display: inline-block; 
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	/* http://www.w3schools.com/html/html_colornames.asp */
+	.brick-red { background: red;}
+	.brick-green { background: green;}
+	.brick-blue { background: blue;}
+	.brick-yellow { background: yellow;}
+	.brick-skyblue { background: aqua;}
+	.brick-magenta { background: magenta;}
+	.brick-cyan { background: cyan;}
+	.brick-orange { background: orange;}
+	.brick-maroon  { background: maroon; }
+		.brick-maroon a { color: white;}
 /* // */
 
 
